@@ -13,7 +13,7 @@ public class WSTest {
     public static void main(String[] args) {
 
         String url_ = "http://219.143.244.183:82/PsMonitorEntryPoint/EntryPointWebService.asmx?wsdl";
-        String url = "http://10.61.32.219:800/PsMonitorWebService.asmx";
+        String url = "http://10.87.10.31:82/PsMonitorCloudData_ljfs/PsMonitorWebService.asmx";
         String key = "NM_3E21VX97T";
         String procName = "srv.Proc_GetData";
         String sql = "select 1";
