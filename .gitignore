@@ -1,5 +1,7 @@
 .idea
 *.iml
 target
+META-INF
+classes
 */target
 
