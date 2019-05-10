@@ -1,0 +1,4 @@
+[2019-05-10 16:39:51.540][DEBUG][com.mydemotest.LoggerTest][main][main][17]: Hello! debug!
+[2019-05-10 16:39:51.542][INFO][com.mydemotest.LoggerTest][main][main][19]: Hello! info!
+[2019-05-10 16:39:51.542][WARN][com.mydemotest.LoggerTest][main][main][21]: Hello! warn!
+[2019-05-10 16:39:51.542][ERROR][com.mydemotest.LoggerTest][main][main][23]: Hello! error!
