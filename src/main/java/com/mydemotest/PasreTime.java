@@ -31,9 +31,11 @@ public class PasreTime {
         //JSONObject jsonObject = JSON.parseArray(jsonStr).getJSONObject(0);
         JSONObject jsonObject1 = JSONObject.parseObject(jsonStr);
         System.out.println(jsonObject1.getString("companyPollutant"));*/
-        String str = "dddd";
-        StaticLog.info("ss {} sss", str);
+        /*String str = "dddd";
+        StaticLog.info("ss {} sss", str);*/
+        String str = "rbdata_md_day_flow_water";
 
+        System.out.println(str.replace("md","region_md"));
     }
 
 }

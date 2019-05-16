@@ -2,6 +2,6 @@
 *.iml
 target
 META-INF
-classes
+classes/
 */target
 
