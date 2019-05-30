@@ -1,6 +1,11 @@
 
 package com.webservice;
 
+import com.webservice.GetPsDataEffectiveTransferRate;
+import com.webservice.GetPsDataEffectiveTransferRateResponse;
+import com.webservice.GetPsMonitor;
+import com.webservice.GetPsMonitorResponse;
+
 import javax.xml.bind.annotation.XmlRegistry;
 
 

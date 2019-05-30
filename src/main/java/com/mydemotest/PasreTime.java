@@ -1,17 +1,24 @@
 package com.mydemotest;
 
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.log.StaticLog;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * mydemo
  * Created by yusb on 2019-04-29
  */
 public class PasreTime {
+
+    static Integer[] flag = new Integer[0];
     public static void main(String[] args) {
 
         /*String time = "2020-05-01 00:00:00";
@@ -33,9 +40,52 @@ public class PasreTime {
         System.out.println(jsonObject1.getString("companyPollutant"));*/
         /*String str = "dddd";
         StaticLog.info("ss {} sss", str);*/
-        String str = "rbdata_md_day_flow_water";
+        /*String str = "rbdata_md_day_flow_water";
 
-        System.out.println(str.replace("md","region_md"));
+        System.out.println(str.replace("md","region_md"));*/
+
+        /*String[] strings = new String[3];
+        strings[0] = "aaaaaa";
+        for(String str : strings){
+            if(str != null){
+                System.out.println(str);
+            }
+        }*/
+
+        /*Map<String, String> map = new HashMap<>();
+        map.put("aaa", "bbbb");
+        map.put("bbb", "cccc");
+
+        for(String key : map.keySet()){
+            System.out.println(key+":"+map.get(key));
+        }
+        map.put("aaa", "111");
+        map.replace("bbb", "222");
+
+        for(String key : map.keySet()){
+            System.out.println(key+":"+map.get(key));
+        }*/
+
+        /*long l = DateUtil.between(DateUtil.parse("2019-05-22 10:00:00"), DateUtil.parse("2019-05-22 09:00:00"), DateUnit.MINUTE, false);
+        System.out.println(l);*/
+        for (int i = 0; i < flag.length; i++) {
+            flag[i] = 1;
+        }
+        for (int i = 0; i < flag.length; i++) {
+            System.out.println(flag[i]);
+        }
+        flag = ArrayUtil.resize(flag, 5);
+        for (int i = 0; i < flag.length; i++) {
+            if (flag[i] == null) {
+                flag[i] = 100;
+            }
+        }
+        for (int i = 0; i < flag.length; i++) {
+            System.out.println(flag[i]);
+        }
+
+
+
     }
 
 }

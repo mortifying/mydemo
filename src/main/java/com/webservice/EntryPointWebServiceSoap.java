@@ -1,5 +1,4 @@
 package com.webservice;
-
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
@@ -22,27 +21,27 @@ public interface EntryPointWebServiceSoap {
     @RequestWrapper(localName = "GetPsMonitor", targetNamespace = "http://tempuri.org/", className = "ws.automonitor.client.GetPsMonitor")
     @WebMethod(operationName = "GetPsMonitor", action = "http://tempuri.org/GetPsMonitor")
     @ResponseWrapper(localName = "GetPsMonitorResponse", targetNamespace = "http://tempuri.org/", className = "ws.automonitor.client.GetPsMonitorResponse")
-    public String getPsMonitor(
-            @WebParam(name = "url", targetNamespace = "http://tempuri.org/")
-                    String url,
-            @WebParam(name = "key", targetNamespace = "http://tempuri.org/")
-                    String key,
-            @WebParam(name = "procName", targetNamespace = "http://tempuri.org/")
-                    String procName,
-            @WebParam(name = "paramJson", targetNamespace = "http://tempuri.org/")
-                    String paramJson
+    public java.lang.String getPsMonitor(
+        @WebParam(name = "url", targetNamespace = "http://tempuri.org/")
+        java.lang.String url,
+        @WebParam(name = "key", targetNamespace = "http://tempuri.org/")
+        java.lang.String key,
+        @WebParam(name = "procName", targetNamespace = "http://tempuri.org/")
+        java.lang.String procName,
+        @WebParam(name = "paramJson", targetNamespace = "http://tempuri.org/")
+        java.lang.String paramJson
     );
 
     @WebResult(name = "GetPsDataEffectiveTransferRateResult", targetNamespace = "http://tempuri.org/")
     @RequestWrapper(localName = "GetPsDataEffectiveTransferRate", targetNamespace = "http://tempuri.org/", className = "ws.automonitor.client.GetPsDataEffectiveTransferRate")
     @WebMethod(operationName = "GetPsDataEffectiveTransferRate", action = "http://tempuri.org/GetPsDataEffectiveTransferRate")
     @ResponseWrapper(localName = "GetPsDataEffectiveTransferRateResponse", targetNamespace = "http://tempuri.org/", className = "ws.automonitor.client.GetPsDataEffectiveTransferRateResponse")
-    public String getPsDataEffectiveTransferRate(
-            @WebParam(name = "key", targetNamespace = "http://tempuri.org/")
-                    String key,
-            @WebParam(name = "procName", targetNamespace = "http://tempuri.org/")
-                    String procName,
-            @WebParam(name = "paramJson", targetNamespace = "http://tempuri.org/")
-                    String paramJson
+    public java.lang.String getPsDataEffectiveTransferRate(
+        @WebParam(name = "key", targetNamespace = "http://tempuri.org/")
+        java.lang.String key,
+        @WebParam(name = "procName", targetNamespace = "http://tempuri.org/")
+        java.lang.String procName,
+        @WebParam(name = "paramJson", targetNamespace = "http://tempuri.org/")
+        java.lang.String paramJson
     );
 }

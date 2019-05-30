@@ -3,6 +3,8 @@ package com.webservice;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 自动监控服务（根据ws获取数据）
@@ -13,6 +15,7 @@ public class AutoMonitorService {
 	/**
 	 * 日志
 	 */
+	private final static Logger logger = LoggerFactory.getLogger(AutoMonitorService.class);
 	
 	private static EntryPointWebServiceSoap entryPointWebServiceSoap;
 	
@@ -29,6 +32,7 @@ public class AutoMonitorService {
 					service = new EntryPointWebService();
 					e1.printStackTrace();
 				}
+				logger.info(e.getMessage());
 			}
 			entryPointWebServiceSoap = service.getEntryPointWebServiceSoap();
 		}
